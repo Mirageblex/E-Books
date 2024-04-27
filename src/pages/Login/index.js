@@ -3,7 +3,7 @@ import styles from './styles';
 import { TextInput } from "react-native-web";
 import { useState } from "react";
 
-export default function Cadastro({ navigation }){
+export default function Login({ navigation }){
     function acessarHome(){
         navigation.navigate('Home');
 
@@ -35,7 +35,7 @@ export default function Cadastro({ navigation }){
             ENTRAR
           </Text>
         </TouchableOpacity>
-      
+
         <TouchableOpacity style={styles.button} onPress={() => navigation.goBack()}>
                 <Text>VOLTAR</Text>
             </TouchableOpacity>
