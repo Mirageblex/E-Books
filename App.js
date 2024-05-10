@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Home from './src/pages/Home';
 import Cadastro from './src/pages/Cadastro'; 
 import Login from './src/pages/Login'; 
+import Telainicial from './src/pages/Telainicial'; 
 
 const Stack = createStackNavigator();
 
@@ -14,15 +15,19 @@ export default function App() {
         name="Home" 
         component={Home}
         />
-        <Stack.Screen 
+      <Stack.Screen 
         name="Login" 
         component={Login}
         />
       <Stack.Screen 
        name="Cadastro"
-       component={Cadastro}
+       component={Cadastro}/>
+       <Stack.Screen 
+       name="Telainicial"
+       component={Telainicial}
        options={{
-        headerShown: false
+
+        title:"Pagina inicial"
       }} 
        />
     </Stack.Navigator>

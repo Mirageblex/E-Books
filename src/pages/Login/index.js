@@ -4,8 +4,8 @@ import { TextInput } from "react-native-web";
 import { useState } from "react";
 
 export default function Login({ navigation }){
-    function acessarHome(){
-        navigation.navigate('Home');
+    function acessarTelainicial(){
+        navigation.navigate('Telainicial');
 
     }
     return(
@@ -29,7 +29,7 @@ export default function Login({ navigation }){
         secureTextEntry={true}/>
   
         <TouchableOpacity style={styles.button}
-            onPress={acessarHome}
+            onPress={acessarTelainicial}
         >
           <Text>
             ENTRAR

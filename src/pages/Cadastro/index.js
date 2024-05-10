@@ -11,7 +11,7 @@ export default function Cadastro({ navigation }){
     return(
         <View style={styles.container}>
         <Text style={styles.texto2}>
-          LOGIN
+          CADASTRO
         </Text>  
           
         <Text style={styles.texto}>
