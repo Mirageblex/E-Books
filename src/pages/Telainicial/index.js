@@ -3,39 +3,28 @@ import styles from './styles';
 import { TextInput } from "react-native-web";
 import { useState } from "react";
 
-export default function Cadastro({ navigation }){
-    function acessarHome(){
-        navigation.navigate('Login');
+export default function Login({ navigation }){
+    function acessarTelainicial(){
+        navigation.navigate('Telainicial');
 
     }
     return(
         <View style={styles.container}>
         <Text style={styles.texto2}>
-          Gênero
+          Seu Livro!!!
         </Text>  
-          
-        <Text style={styles.texto}>
-          E-MAIL
-        </Text>    
-
-        <TextInput style={styles.input}
-        keyboardType='email-address'/>   
-  
-        <Text style={styles.texto}>
-          SENHA
-        </Text>    
   
         <TextInput style={styles.input}
         secureTextEntry={true}/>
   
         <TouchableOpacity style={styles.button}
-            onPress={acessarHome}
+            onPress={acessarTelainicial}
         >
           <Text>
             ENTRAR
           </Text>
         </TouchableOpacity>
-      
+
         <TouchableOpacity style={styles.button} onPress={() => navigation.goBack()}>
                 <Text>VOLTAR</Text>
             </TouchableOpacity>

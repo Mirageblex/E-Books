@@ -20,7 +20,7 @@ export default StyleSheet.create({
         input:{
           backgroundColor: "#676F9D",
           borderWidth: 1,
-          paddingHorizontal: 100,
+          paddingHorizontal: 50,
           paddingVertical: 15,
           borderRadius: 8,
         },
