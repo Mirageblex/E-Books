@@ -3,31 +3,29 @@ import styles from './styles';
 import { TextInput } from "react-native-web";
 import { useState } from "react";
 
-export default function Login({ navigation }){
-    function acessarTelainicial(){
+export default function Login({ navigation }) {
+    function acessarTelainicial() {
         navigation.navigate('Telainicial');
-
     }
-    return(
-        <View style={styles.container}>
-        <Text style={styles.texto2}>
-          Seu Livro!!!
-        </Text>  
-  
-        <TextInput style={styles.input}
-        secureTextEntry={true}/>
-  
-        <TouchableOpacity style={styles.button}
-            onPress={acessarTelainicial}
-        >
-          <Text>
-            ENTRAR
-          </Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={() => navigation.goBack()}>
-                <Text>VOLTAR</Text>
-            </TouchableOpacity>
-      </View>
+    return (
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <TouchableOpacity style={styles.searchButton}>
+                    {/* Ícone de pesquisa pode ser adicionado aqui */}
+                    <Text style={styles.searchButtonText}>🔍</Text>
+                </TouchableOpacity>
+            </View>
+            
+            <View style={styles.content}>
+                <TouchableOpacity style={styles.genreButton}>
+                    <Text style={styles.genreButtonText}>FANTASIA</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.addButton}>
+                    <Text style={styles.addButtonText}>+</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
     );
 }

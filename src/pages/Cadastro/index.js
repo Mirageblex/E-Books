@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Cadastro({ navigation }){
     function acessarHome(){
-        navigation.navigate('Home');
+        navigation.navigate('Telainicial');
 
     }
     return(
