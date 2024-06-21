@@ -7,28 +7,45 @@ export default StyleSheet.create({
           backgroundColor: '#2D3252',
           alignItems: 'center',
           justifyContent: 'center',
-          gap:20
+          gap:90,
+          
         },
         texto:{
           color: "#FFFF",
-          fontSize: 20
+          fontSize: 30,
+          width:"100%",
+          height:"100%",
+          alignContent:"center",
+          textAlign:"center",
+          color:"black",
+          fontWeight: '600',
         },
-        texto2:{
-          color: "#FFFF",
-          fontSize: 50
-        },
-        input:{
-          backgroundColor: "#676F9D",
-          borderWidth: 1,
-          paddingHorizontal: 100,
-          paddingVertical: 15,
-          borderRadius: 8,
-        },
+        
+      
         button:{
           backgroundColor: "#F9B17A",
-          paddingHorizontal: 100,
-          paddingVertical: 15,
-          borderRadius: 6  
+          width:"75%",
+          height:80,
+          alignItems:"center",
+          alignContent:"center",
+          borderRadius: 6  ,
+        },
+        livro:{
+          width:90,
+          height:90,
+          marginLeft:10,
+          resizeMode:"stretch",
+        },
+        titulo:{
+          width:250,
+          height:50,
+         marginTop:10,
+         resizeMode:"stretch",
+        },
+        cabecalho:{
+          flexDirection:"row",
+          height:201,
         }
+
 
 });

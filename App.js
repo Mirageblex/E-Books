@@ -10,25 +10,11 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
    <NavigationContainer>
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen 
-        name="Home" 
-        component={Home}
-        />
-      <Stack.Screen 
-        name="Login" 
-        component={Login}
-        />
-      <Stack.Screen 
-       name="Cadastro"
-       component={Cadastro}/>
-       <Stack.Screen 
-       name="Telainicial"
-       component={Telainicial}
-       options={{
-
-        title:"Pagina inicial"
-      }} 
+    <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Home" component={Home}/>
+      <Stack.Screen name="Login"component={Login}/>
+      <Stack.Screen name="Cadastro"component={Cadastro}/>
+       <Stack.Screen name="Telainicial"component={Telainicial}options={{title:"Pagina inicial"}} 
        />
     </Stack.Navigator>
    </NavigationContainer>
